@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageExplorer</string>
+    <string name="tv_unkown">Unkown</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_main">Type to filter</string>
+    <string name="tv_example">Example: music, animal, fashion</string>
+</resources>
