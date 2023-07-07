@@ -63,7 +63,7 @@ class ImageFragment : BaseFragment<FragmentImageBinding>(FragmentImageBinding::i
                 is UIState.Error -> {
                     Toast.makeText(
                         requireContext(),
-                        "Error 303, please try again",
+                        "connection error, please try again",
                         Toast.LENGTH_SHORT
                     )
                         .show()
@@ -73,6 +73,7 @@ class ImageFragment : BaseFragment<FragmentImageBinding>(FragmentImageBinding::i
     }
     override fun resultListener(result: List<String>) {
         imageViewModel.filterCategory(result)
+        getWeather()
     }
 }
 
